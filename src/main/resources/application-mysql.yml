@@ -3,8 +3,8 @@ spring:
     hikari:
       jdbc-url: jdbc:mysql://localhost:3306/springbatch?useUnicode=true&characterEncoding=utf8
       username: root
-      password: 
+      password: &{PASSWORD}
       driver-class-name: com.mysql.jdbc.Driver
   batch:
     jdbc:
-      initialize-schema: embedded
+      initialize-schema: always
